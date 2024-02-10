@@ -1,0 +1,22 @@
+<html>
+<head>
+   <script >
+   function changestate()
+   {
+     document.getElementById("id1").readOnly=true;
+   }
+   function changestate2()
+   {
+     document.getElementById("id2").writeOnly=true;
+   }
+   </script>
+</head>
+<body>
+   <form>
+   <textarea name="Read" id="id1" rows="5" cols="50" >This is text area</textarea>
+   <input type="button" name="b1" value="Read only" onclick="changestate()">
+   <input type="button" name="b2" value="write only" onclick="changestate2()">
+	</form>
+</body>
+	 
+</html>

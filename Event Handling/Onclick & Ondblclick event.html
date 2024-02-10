@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function display()
+		{
+			alert("display function called when onclick event occurred!!!");
+		}
+		function show()
+		{
+			alert("ondblclick event occurred!!!");
+		}
+		
+	</script>
+</head>
+<body>
+		<form name="myform">
+			<input type="button" name="b1" value="Single Click" onclick="display()">
+			<input type="button" name="b2" value="Double Click" ondblclick="show()">
+		</form>
+</body>
+</html>

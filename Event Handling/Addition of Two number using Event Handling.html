@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function display()
+		{
+			var a=document.getElementById("id1").value;
+			var b=document.getElementById("id2").value;
+			var c=parseInt(a)+parseInt(b);
+			document.getElementById("id3").value=c;
+		}
+	</script>
+</head>
+<body>
+	<form name="myform">
+		Enter First Number:<input type="text" name="tf1"  id="id1"><br><br>
+		Enter Second Number:<input type="text" name="tf2"  id="id2"><br><br>
+		Result:<input type="text" name="tf3"  id="id3"><br><br>
+		<input type="button" name="b1" value="OK" onclick="display()">
+	</form>
+</body>
+</html>
+

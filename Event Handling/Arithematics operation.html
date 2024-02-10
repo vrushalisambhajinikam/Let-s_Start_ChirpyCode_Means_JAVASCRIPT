@@ -1,0 +1,47 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function add()
+		{
+			var a=document.getElementById("id1").value;
+			var b=document.getElementById("id2").value;
+			var c=parseInt(a)+parseInt(b);
+			document.getElementById("id3").value=c;
+		}
+		function sub()
+		{
+			var a=document.getElementById("id1").value;
+			var b=document.getElementById("id2").value;
+			var c=parseInt(a)-parseInt(b);
+			document.getElementById("id3").value=c;
+		}
+		function mul()
+		{
+			var a=document.getElementById("id1").value;
+			var b=document.getElementById("id2").value;
+			var c=parseInt(a)*parseInt(b);
+			document.getElementById("id3").value=c;
+		}
+		function div()
+		{
+			var a=document.getElementById("id1").value;
+			var b=document.getElementById("id2").value;
+			var c=parseInt(a)/parseInt(b);
+			document.getElementById("id3").value=c;
+		}
+	</script>
+</head>
+<body>
+	<form name="myform">
+		Enter First Number:<input type="text" name="tf1"  id="id1"><br><br>
+		Enter Second Number:<input type="text" name="tf2"  id="id2"><br><br>
+		Result:<input type="text" name="tf3" id="id3"><br><br>
+		<input type="button" name="b1" value="ADD" onclick="add()">
+		<input type="button" name="b2" value="SUB" onclick="sub()">
+		<input type="button" name="b3" value="MUL" onclick="mul()">
+		<input type="button" name="b4" value="DIV" onclick="div()">
+		<input type="reset" name="b5" value="Reset">	
+	</form>
+</body>
+</html>
+

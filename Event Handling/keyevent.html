@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function display1()
+		{
+			document.getElementById("id1").value="onkeypress event";
+		}
+		function display2()
+		{
+			document.getElementById("id2").value="onkeydown event";
+		}
+		function display3()
+		{
+			document.getElementById("id3").value="onkeyup event";
+		}
+	</script>
+</head>
+<body>
+	<form name="myform">
+		Key Press Result:<input type="text" name="tf1"  id="id1"><br><br>
+		Key Down Result :<input type="text" name="tf2"  id="id2"><br><br>
+		Key Up Result   :<input type="text" name="tf3"  id="id3"><br><br>
+		Event source:<input type="text" name="tf4" onkeypress="display1()" onkeydown="display2()"
+		onkeyup="display3()">
+	</form>
+</body>
+</html>
+

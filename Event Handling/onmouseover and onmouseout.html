@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function display1()
+		{
+			document.getElementById("id1").value="MouseOver event Occurred";
+		}
+		function display2()
+		{
+		   document.getElementById('id1').value="MouseOut event Occurred";	
+		}
+	</script>
+</head>
+<body>
+	<form name="myform">
+		<input type="text" name="tf1"  id="id1">
+		<input type="button" name="b1" value="ok" onmouseover="display1()" onmouseout="display2()">
+	</form>
+</body>
+</html>
+
