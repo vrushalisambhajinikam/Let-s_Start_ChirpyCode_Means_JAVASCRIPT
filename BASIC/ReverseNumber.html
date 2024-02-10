@@ -1,0 +1,19 @@
+<html>
+<body>	
+	<script language="javascript" type="text/javascript">
+		function ReverseNo()
+		{		
+		    var no,rem,rev=0;
+			no=parseInt(prompt("Enter Number:"));
+			while(no>0)
+			{
+				rem=no%10;
+				rev=rev*10+rem;
+				no=parseInt(no/10);
+			}
+			document.write("Reverse Number="+rev);
+		}
+		ReverseNo();
+	</script>
+</body>
+</html>
