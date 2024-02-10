@@ -1,2 +1,2 @@
 I have given this repository name as ChirpCode 😁 because "ChirpyCode" suggests a lighthearted and cheerful vibe. The word "Chirpy" often refers to the cheerful and lively sound of birds, like a bird's chirp. When applied to code, it implies a positive and lively coding environment, perhaps indicating that working with the code is a pleasant and enjoyable experience. It adds a touch of friendliness and approachability to the coding context.
-I want to learn with fun..
+I want to learn with fun..😃✨✨
