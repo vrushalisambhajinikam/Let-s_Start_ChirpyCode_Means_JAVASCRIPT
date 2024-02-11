@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Regular Expression</title>
+	 <script>
+		function CheckOperation()
+		{
+			var regex=/vrushali/g;
+			var str=document.getElementById("id1").value;
+			var result=regex.test(str);
+			var result=str.match(regex);
+			alert("Regular Expression Result:"+result);
+		}
+	 </script>
+	 Enter text:<input type="text" id="id1">
+	 <input type="button" name="b1" value="check" onclick="CheckOperation()"
+</head>
+</html>

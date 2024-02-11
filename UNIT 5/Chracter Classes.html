@@ -1,0 +1,53 @@
+<html>
+<head>
+	<script>
+		var mystr="Vrusha@#1234";
+		
+		var reg=/[abc]/g;           //matches only a,b,c charater
+		var match=mystr.match(reg);
+		document.write(match);           //a
+		
+		var reg1=/[^abc]/g;              //matches character other than a,b,c
+		var match=mystr.match(reg1);
+		document.write("<br>"+match);    //V,r,u,s,h,@,#,1,2,3,4
+		 
+		var reg2=/[a-z]/g;              //matches charactes between small a-z
+		var match=mystr.match(reg2);
+		document.write("<br>"+match);    //r,u,s,h,a
+		
+		var reg3=/[^a-z]/g;              //matches charactes other than small a-z
+		var match=mystr.match(reg3);
+		document.write("<br>"+match);     //V,@,#,1,2,3,4
+		
+		var reg4=/[A-Z]/g;              //matches charactes between capital A-Z
+		var match=mystr.match(reg4);
+		document.write("<br>"+match);    //V
+		
+		var reg5=/[^A-Z]/g;              //matches charactes other than Capital A-Z
+		var match=mystr.match(reg5);
+		document.write("<br>"+match);     //r,u,s,h,a,@,#,1,2,3,4
+		
+		var reg6=/[^A-z]/g;              //It not display small and capital characters
+		var match=mystr.match(reg6);
+		document.write("<br>"+match);  		//@,#,1,2,3,4
+		
+		 var reg7=/[^0-9]/g;              // It does not display numbers between 0-9
+		var match=mystr.match(reg7);
+		document.write("<br>"+match);      //V,r,u,s,h,a,@,#
+		
+		var reg8=/[0-9]/g;              //It will display only numbers between 0-9 
+		var match=mystr.match(reg8);
+		document.write("<br>"+match);      //1,2,3,4
+		
+		var reg9=/[a-z 0-9]/g;              //It will display numbers between 0-9 and characters between a-z
+		var match=mystr.match(reg9);
+		document.write("<br>"+match);      //r,u,s,h,a,1,2,3,4
+		
+		var reg10=/[A-Z 0-9]/g;              //It will display numbers between 0-9 and characters between A-Z
+		var match=mystr.match(reg10);
+		document.write("<br>"+match);      //V,1,2,3,4
+		
+		
+	</script>
+</head>
+</html>
