@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function display()
+{
+	with(document.forms.frm)
+    {
+		if(c1.checked==true)
+		{
+			alert("You have selected c");
+		}
+		if(c2.checked==true)
+		{
+			alert("You have selected cpp");
+		}
+		if(c3.checked==true)
+		{
+			alert("You have selected java");
+		}
+	}
+}
+</script>
+</head>
+<body>
+<form name="frm">
+	<input type="checkbox" name="c1" value="C">C Lang
+	<input type="checkbox" name="c2" value="Cpp">C++ Lang
+	<input type="checkbox" name="c3" value="Java" >Java Lang
+	<input type="reset" name="b1" value="click" onclick="display()">
+</form>
+</body>  
+</html>
