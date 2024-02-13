@@ -1,0 +1,17 @@
+<html>
+<script>
+	function Readonly()
+	{
+	document.getElementById("id1").readOnly=true;
+	}
+	function Notreadonly()
+	{
+	document.getElementById("id1").readOnly=false;
+	}
+</script>
+<body>
+<input type="text" name="tx" id="id1">
+<input type="button" name="b1" value="readonly" onclick="Readonly()">
+<input type="button" name="b2" value="notreadonly" onclick="Notreadonly()">
+</body>
+</html>
